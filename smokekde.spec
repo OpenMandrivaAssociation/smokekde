@@ -2,7 +2,7 @@
 Name:smokekde
 Summary: KDE4 bindings for SMOKE 
 Version: 4.7.90
-Release: 1
+Release: 2
 Epoch:   1
 Group: Graphical desktop/KDE
 License: GPLv2 LGPLv2
@@ -341,7 +341,7 @@ Nepomuk bindings for SMOKE (Scripting Meta Object Kompiler Engine)
 Summary: Header files for %{name}
 Group: Development/KDE and Qt
 Requires: smokeqt-devel >= 1:%version
-Requires: okular-devel >= 2%:%version
+Requires: okular-devel >= 2:%version
 Requires: kate-devel >= 1:%version
 %if %with_kdepimlibs
 Requires: %{libsmokeakonadi} = %epoch:%version-%release
