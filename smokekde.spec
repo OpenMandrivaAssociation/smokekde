@@ -1,7 +1,7 @@
 %define with_kdepimlibs 0
 Name:smokekde
 Summary: KDE4 bindings for SMOKE 
-Version: 4.7.95
+Version: 4.7.97
 Release: 1
 Epoch:   1
 Group: Graphical desktop/KDE
