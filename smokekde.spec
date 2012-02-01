@@ -13,7 +13,7 @@ BuildRequires: smokeqt-devel >= 1:%version
 BuildRequires: kdepimlibs4-devel >= 2:%version
 %endif
 BuildRequires: okular-devel >= 2:%version
-BuildRequires: kate-devel >= 1:%version
+BuildRequires: kate-devel >= 1:%version-2
 BuildRequires: qscintilla-qt4-devel
 
 %description
