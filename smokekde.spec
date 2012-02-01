@@ -1,8 +1,8 @@
-%define with_kdepimlibs 0
+%define with_kdepimlibs 1
 Name:smokekde
 Summary: KDE4 bindings for SMOKE 
 Version: 4.8.0
-Release: 1
+Release: 2
 Epoch:   1
 Group: Graphical desktop/KDE
 License: GPLv2 LGPLv2
@@ -13,7 +13,7 @@ BuildRequires: smokeqt-devel >= 1:%version
 BuildRequires: kdepimlibs4-devel >= 2:%version
 %endif
 BuildRequires: okular-devel >= 2:%version
-BuildRequires: kate-devel >= 1:%version-2
+BuildRequires: kate-devel >= 1:%version
 BuildRequires: qscintilla-qt4-devel
 
 %description
