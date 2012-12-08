@@ -2,8 +2,8 @@
 
 Name:		smokekde
 Summary:	KDE4 bindings for SMOKE
-Version: 4.9.3
-Release: 1
+Version:	4.9.4
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2
@@ -434,4 +434,77 @@ Devel files for %{name}
 
 %install
 %makeinstall_std -C build
+
+%changelog
+* Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.4-1
+- New version 4.9.4
+
+* Wed Nov 07 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.3-1
+- New version 4.9.3
+
+* Thu Oct 04 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.2-1
+- New version 4.9.2
+
+* Sat Sep 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.1-1
+- New version 4.9.1
+
+* Tue Aug 14 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.0-1
+- New version 4.9.0
+
+* Sun Jul 22 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.97-1
+- New version 4.8.97
+
+* Sun Jul 08 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.8.95-1
+- New version 4.8.95
+
+* Fri Jun 08 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.4-69.1mib2010.2
+- New version 4.8.4
+- MIB (Mandriva International Backports)
+
+* Fri May 04 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.3-69.1mib2010.2
+- New version 4.8.3
+- MIB (Mandriva International Backports)
+
+* Wed Apr 04 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.2-69.1mib2010.2
+- New version 4.8.2
+- MIB (Mandriva International Backports)
+
+* Wed Mar 07 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.1-69.1mib2010.2
+- New version 4.8.1
+- MIB (Mandriva International Backports)
+
+* Mon Feb 20 2012 Andrey Bondrov <bondrov@math.dvgu.ru> 1:4.8.0-69.2mib2010.2
++ Revision: 770534
+- Backport to 2010.2 for MIB users
+- MIB (Mandriva International Backports)
+
+* Wed Feb 01 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1:4.8.0-2
++ Revision: 770534
+- build with kdepimlibs
+- build against working kate..
+
+* Thu Jan 19 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.8.0-1
++ Revision: 762506
+- New upstream tarball
+
+* Fri Jan 06 2012 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.97-1
++ Revision: 758091
+- New upstream tarball
+
+* Thu Dec 22 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.95-1
++ Revision: 744570
+- New upstream tarball
+
+* Thu Dec 22 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.90-2
++ Revision: 744388
+- Fix typo in requires
+
+* Fri Dec 09 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.90-1
++ Revision: 739325
+- New upstream tarball $NEW_VERSION
+- New upstream tarball 4.7.80
+
+* Mon Nov 14 2011 Nicolas Lécureuil <nlecureuil@mandriva.com> 1:4.7.41-1
++ Revision: 730563
+- Import smokekde
 
