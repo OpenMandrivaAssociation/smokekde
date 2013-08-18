@@ -18,10 +18,11 @@ BuildRequires:	kate-devel >= 1:%{version}
 BuildRequires:	qscintilla-qt4-devel
 BuildRequires:	pkgconfig(akonadi)
 BuildRequires:	pkgconfig(libattica)
+BuildRequires:	pkgconfig(shared-desktop-ontologies)
 BuildRequires:	pkgconfig(soprano)
 
 %description
-KDE4 bindings for SMOKE (Scripting Meta Object Kompiler Engine)
+KDE4 bindings for SMOKE (Scripting Meta Object Kompiler Engine).
 
 #-----------------------------------------------------------------------------
 
@@ -438,6 +439,7 @@ Devel files for %{name}
 %changelog
 * Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.0-1
 - New version 4.11.0
+- Add pkgconfig(shared-desktop-ontologies) to BuildRequires
 
 * Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.5-1
 - New version 4.10.5
