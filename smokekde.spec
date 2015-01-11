@@ -3,7 +3,7 @@
 Name:		smokekde
 Summary:	KDE4 bindings for SMOKE
 Version:	4.14.3
-Release:	2
+Release:	3
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2
@@ -14,7 +14,6 @@ BuildRequires:	smokeqt-devel >= 1:%{version}
 BuildRequires:	kdepimlibs4-devel >= 2:%{version}
 %endif
 BuildRequires:	okular-devel >= 2:%{version}
-BuildRequires:	kate-devel >= 1:%{version}
 BuildRequires:	qscintilla-qt4-devel
 BuildRequires:	pkgconfig(akonadi)
 BuildRequires:	pkgconfig(libattica)
@@ -55,7 +54,7 @@ Soprano bindings for SMOKE (Scripting Meta Object Kompiler Engine)
 %{_kde_libdir}/libsmokesopranoserver.so.%{smokesopranoserver_major}*
 
 #------------------------------------------------------------
-
+%if 0
 %define smokekate_major 3
 %define libsmokekate %mklibname smokekate %{smokekate_major}
 
@@ -68,6 +67,7 @@ Kate bindings for SMOKE (Scripting Meta Object Kompiler Engine)
 
 %files -n %{libsmokekate}
 %{_kde_libdir}/libsmokekate.so.%{smokekate_major}*
+%endif
 
 #-----------------------------------------------------------------------------
 
@@ -347,13 +347,17 @@ Summary:	Header files for %{name}
 Group:		Development/KDE and Qt
 Requires:	smokeqt-devel >= 1:%{version}
 Requires:	okular-devel >= 2:%{version}
+%if 0
 Requires:	kate-devel >= 1:%{version}
+%endif
 %if %{with_kdepimlibs}
 Requires:	%{libsmokeakonadi} = %{EVRD}
 Requires:	kdepimlibs4-devel >= 2:%{version}
 %endif
 Requires:	%{libsmokeattica} = %{EVRD}
+%if 0
 Requires:	%{libsmokekate} = %{EVRD}
+%endif
 Requires:	%{libsmokekdecore} = %{EVRD}
 Requires:	%{libsmokekdeui} = %{EVRD}
 Requires:	%{libsmokekfile} = %{EVRD}
@@ -397,8 +401,10 @@ Devel files for %{name}
 %{_includedir}/smoke/soprano_smoke.h
 %{_includedir}/smoke/sopranoclient_smoke.h
 %{_includedir}/smoke/sopranoserver_smoke.h
+%if 0
 %{_includedir}/smoke/kate_smoke.h
 %{_kde_libdir}/libsmokekate.so
+%endif
 %if %{with_kdepimlibs}
 %{_includedir}/smoke/akonadi_smoke.h
 %{_kde_libdir}/libsmokeakonadi.so
