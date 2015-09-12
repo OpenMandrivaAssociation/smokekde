@@ -3,7 +3,7 @@
 Name:		smokekde
 Summary:	KDE4 bindings for SMOKE
 Version:	4.14.3
-Release:	4
+Release:	5
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2
