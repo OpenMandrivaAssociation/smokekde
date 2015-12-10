@@ -281,20 +281,6 @@ Plasma bindings for SMOKE (Scripting Meta Object Kompiler Engine)
 
 #------------------------------------------------------------
 
-%define libsmokenepomuk_major 3
-%define libsmokenepomuk %mklibname smokenepomuk %{libsmokenepomuk_major}
-
-%package -n %{libsmokenepomuk}
-Summary:	Nepomuk bindings for SMOKE
-Group:		Development/KDE and Qt
-
-%description -n %{libsmokenepomuk}
-Nepomuk bindings for SMOKE (Scripting Meta Object Kompiler Engine)
-
-%files -n %{libsmokenepomuk}
-%{_kde_libdir}/libsmokenepomuk.so.%{libsmokenepomuk_major}*
-
-#------------------------------------------------------------
 %if %{with_kdepimlibs}
 %define libsmokeakonadi_major 3
 %define libsmokeakonadi %mklibname smokeakonadi %{libsmokeakonadi_major}
@@ -327,19 +313,6 @@ Attica bindings for SMOKE (Scripting Meta Object Kompiler Engine)
 
 #------------------------------------------------------------
 
-%define libsmokenepomukquery_major 3
-%define libsmokenepomukquery %mklibname smokenepomukquery %{libsmokenepomukquery_major}
-
-%package -n %{libsmokenepomukquery}
-Summary:	Nepomuk bindings for SMOKE
-Group:		Development/KDE and Qt
-
-%description -n %{libsmokenepomukquery}
-Nepomuk bindings for SMOKE (Scripting Meta Object Kompiler Engine)
-
-%files -n %{libsmokenepomukquery}
-%{_kde_libdir}/libsmokenepomukquery.so.%{libsmokenepomukquery_major}*
-
 #------------------------------------------------------------
 
 %package devel
@@ -368,8 +341,6 @@ Requires:	%{libsmokeknewstuff3} = %{EVRD}
 Requires:	%{libsmokekparts} = %{EVRD}
 Requires:	%{libsmokektexteditor} = %{EVRD}
 Requires:	%{libsmokekutils} = %{EVRD}
-Requires:	%{libsmokenepomuk} = %{EVRD}
-Requires:	%{libsmokenepomukquery} = %{EVRD}
 Requires:	%{libsmokeokular} = %{EVRD}
 Requires:	%{libsmokeplasma} = %{EVRD}
 Requires:	%{libsmokesolid} = %{EVRD}
@@ -393,8 +364,6 @@ Devel files for %{name}
 %{_includedir}/smoke/kparts_smoke.h
 %{_includedir}/smoke/ktexteditor_smoke.h
 %{_includedir}/smoke/kutils_smoke.h
-%{_includedir}/smoke/nepomuk_smoke.h
-%{_includedir}/smoke/nepomukquery_smoke.h
 %{_includedir}/smoke/okular_smoke.h
 %{_includedir}/smoke/plasma_smoke.h
 %{_includedir}/smoke/solid_smoke.h
@@ -420,8 +389,6 @@ Devel files for %{name}
 %{_kde_libdir}/libsmokekparts.so
 %{_kde_libdir}/libsmokektexteditor.so
 %{_kde_libdir}/libsmokekutils.so
-%{_kde_libdir}/libsmokenepomuk.so
-%{_kde_libdir}/libsmokenepomukquery.so
 %{_kde_libdir}/libsmokeokular.so
 %{_kde_libdir}/libsmokeplasma.so
 %{_kde_libdir}/libsmokesolid.so
@@ -436,7 +403,7 @@ Devel files for %{name}
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4  -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
 %make
 
 %install
