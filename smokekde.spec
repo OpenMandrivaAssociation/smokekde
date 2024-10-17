@@ -7,7 +7,7 @@ Release:	5.1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 LGPLv2
-URL:		http://www.kde.org
+URL:		https://www.kde.org
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	smokeqt-devel >= 1:%{version}
 %if %{with_kdepimlibs}
